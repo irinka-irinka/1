@@ -134,7 +134,7 @@ nav {
  
   padding: 157px 80px 330px;
   width: 100%;
- 
+ max-height: 820px;
   margin: 0 auto;
   background: url('./assets/img/header-bg.jpg') center/cover no-repeat;
   background-position: center -90px;
