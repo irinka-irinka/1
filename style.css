@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #000;
@@ -39,7 +42,7 @@ header {
   max-width: 1440px;
 }
 .header-container {
-  background: url('./assets/img/header-bg.jpg');
+  background-image: url('./assets/img/header-bg.jpg');
   background-repeat: no-repeat;
   /* background-position: center 0; */
 
@@ -67,8 +70,11 @@ header {
 }
 
 .logo:hover,
-.fa:hover,
-.video-play {
+.footer-content-item-icon-inst:hover,
+.footer-content-item-icon-tw:hover,
+.footer-content-item-icon-pinterest:hover,
+.footer-content-item-icon-fb:hover
+.video-play:hover {
   filter: invert(34%) sepia(21%) saturate(491%) hue-rotate(7deg) brightness(104%) contrast(85%);
 }
 
@@ -93,7 +99,7 @@ nav {
   padding-right: 30px;
   color: #FFFFFF;
  display: block;
- 
+  transition: color 0.5s;
 
   font-weight: normal;
   font-size: 20px;
@@ -131,13 +137,13 @@ nav {
 
 .hero-container {
   /* background-image: url('./assets/img/header-bg.jpg'); */
- 
+ max-height: 820px;
   padding: 157px 80px 330px;
   width: 100%;
- max-height: 820px;
+ 
   margin: 0 auto;
-  background: url('./assets/img/header-bg.jpg') center/cover no-repeat;
-  background-position: center -90px;
+  background: url('./assets/img/header-bg.jpg')center -90px/cover no-repeat;
+  /* background-position: center -90px; */
 }
 
 
@@ -172,6 +178,7 @@ background: #000;
 border: 2px solid #BDAE82;
 color: #BDAE82;
 background-color: transparent;
+
 }
 .btn_dark:hover,
 .btn_gold:hover {
@@ -191,7 +198,7 @@ background-color: transparent;
   font-size: 20px;
   cursor: pointer;
   line-height: 40px;
-  
+   transition: color 0.5s;
  
 
   /* color: #BDAE82; */
@@ -328,21 +335,17 @@ display: grid;
 }
 
 .video-play {
-  
-  background-image: url('./assets/svg/video-play.svg');
+   background-image: url('./assets/svg/video-play.svg');
   position: absolute;
   width: 129.86px;
   height: 130px;
   border: none;
   border-radius: 100%;
   background-color:  transparent;
- color:#fff;
+ /* color:#fff; */
+  transition: color 0.5s;
+  cursor: pointer;
 }
-/* .video-play:hover {
- filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
- 
-} */
-
 .price-items{
   max-height: 505px;
   display: flex;
@@ -499,6 +502,7 @@ font-size: 20px;
   color: #fff;
  text-decoration: none;
  display: block;
+  transition: color 0.5s;
  
 }
  .footer-content-item-icon-inst{
